@@ -106,11 +106,7 @@
                     <div class="d-grid">
                         <a href="/" class="btn btn-secondary mb-3">Kembali ke Halaman Utama</a>
                         
-                        <form action="/download" method="post" style="display:inline;">
-                            <input type="hidden" name="raw_score" value="{{ raw_score }}">
-                            <button type="submit" class="btn btn-primary">Download Hasil sebagai Excel</button>
-                        </form>
-                    
+                        <!-- Form untuk mengunduh hasil sebagai PDF -->
                         <form action="/download_pdf" method="post" class="mt-3">
                             <input type="hidden" name="raw_score" value="{{ raw_score }}">
                             <input type="hidden" name="predicted_iq" value="{{ predicted_iq }}">
